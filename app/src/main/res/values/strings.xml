@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Evidence Tracker</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_homepage">HomepageActivity</string>
+
+
+    <string name="homepage">HOMEPAGE</string>
+    <string name="cases">CASES</string>
+    <string name="case_no">CASE#</string>
+    <string name="guidelines">GUIDELINES</string>
+    <string name="login">LOGIN</string>
+    <string name="browseCases">BROWSE</string>
+    <string name="editCase">EDIT A CASE</string>
+    <string name="addCase">ADD A CASE</string>
+
+    <string name="category">CATEGORY:</string>
+    <string name="date_incident">DATE OF INCIDENT:</string>
+    <string name="name_of_io">NAME OF IO:</string>
+    <string name="branch">BRANCH:</string>
+    <string name="evidence">EVIDENCE(S):</string>
+    <string name="submit_case">SUBMIT</string>
+
+</resources>
