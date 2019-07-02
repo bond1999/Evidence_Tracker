@@ -3,29 +3,48 @@
     package="com.gpsi.evidencetracker">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <supports-screens
-        android:smallScreens="true"
         android:largeScreens="true"
         android:normalScreens="true"
-        android:xlargeScreens="true"/>
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".GuidelinesActivity" />
-        <activity android:name=".AddCasesActivity" />
-        <activity android:name=".EditCasesActivity" />
-        <activity android:name=".BrowseCasesActivity" />
-        <activity android:name=".CasesActivity" />
+        <activity android:name=".CameraActivity"></activity>
+        <activity android:name=".Guidelines2" />
+        <activity android:name=".Case3" />
+        <activity android:name=".Case2" />
+        <activity android:name=".Case1" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GuidelinesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddCasesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BrowseCasesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CasesActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SplashActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="keyboardHidden|screenSize"
+            android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
@@ -37,8 +56,9 @@
         </activity>
         <activity
             android:name=".HomepageActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="keyboardHidden|screenSize"
             android:label="@string/title_activity_homepage"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" />
     </application>
 

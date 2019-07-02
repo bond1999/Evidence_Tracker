@@ -10,12 +10,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import static com.gpsi.evidencetracker.HomepageActivity.userId;
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         setContentView(R.layout.activity_login);
 
         Button login = (Button) findViewById(R.id.nav_submit_login);
@@ -32,14 +35,24 @@ public class LoginActivity extends AppCompatActivity {
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
                 }
-                else {
+                else if(correctDetails()==true){
                     Context context = getApplicationContext();
-                    CharSequence text = "Logged In Successfully!! \n (Yet to integrate with Database)";
+                    CharSequence text = "Logged in Successfully!!\n";
+
                     int duration = Toast.LENGTH_LONG;
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
                     finish();
                 }
+                else if(correctDetails()==false){
+                    Context context = getApplicationContext();
+                    CharSequence text = "\tLogin Unsuccessful!! \nPlease enter correct login details.";
+
+                    int duration = Toast.LENGTH_LONG;
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
+                }
+
             }
         });
     }
@@ -69,4 +82,31 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    private boolean correctDetails() {
+
+        EditText name = (EditText) findViewById(R.id.textbox_name);
+        EditText badgeno = (EditText) findViewById(R.id.textbox_badgeno);
+        EditText dob = (EditText) findViewById(R.id.textbox_dob);
+        EditText password = (EditText) findViewById(R.id.textbox_password);
+
+        String name_text = name.getText().toString().trim();
+        String badgeno_text = badgeno.getText().toString().trim();
+        String dob_text = dob.getText().toString().trim();
+        String password_text = password.getText().toString().trim();
+
+        if(name_text.equals("admin") && badgeno_text.equals("987654") && dob_text.equals("01/01/1980") && password_text.equals("admin"))
+        {
+            userId=1;
+            return true;
+        }
+        else if(name_text.equals("root") && badgeno_text.equals("987654") && dob_text.equals("01/01/1980") && password_text.equals("root"))
+        {
+            userId=2;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

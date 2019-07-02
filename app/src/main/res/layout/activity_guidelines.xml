@@ -5,7 +5,7 @@
     android:id="@+id/splashLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_light"
+    android:background="@color/appBackground"
     android:fitsSystemWindows="true"
     android:theme="@style/AppTheme"
     tools:context=".HomepageActivity">
@@ -25,30 +25,30 @@
             android:background="@drawable/button_bg_rounded_corners"
             android:fontFamily="sans-serif"
             android:text="How to Use the App"
-            android:textColor="@android:color/background_light"
+            android:textColor="@color/buttonText"
             android:textSize="32sp"
             android:typeface="serif"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_guidelines"
-            app:layout_constraintVertical_bias="0.193" />
+            app:layout_constraintVertical_bias="0.156" />
 
         <Button
             android:id="@+id/nav_guidelines2"
             android:layout_width="377dp"
             android:layout_height="87dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_bg_rounded_corners"
             android:fontFamily="sans-serif"
-            android:text="How to collect evidence in the field"
-            android:textColor="@android:color/background_light"
+            android:text="@string/guidelines2"
+            android:textColor="@color/buttonText"
             android:textSize="32sp"
             android:typeface="serif"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/nav_guidelines3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nav_guidelines1" />
@@ -64,13 +64,14 @@
             android:background="@drawable/button_bg_rounded_corners"
             android:fontFamily="sans-serif"
             android:text="how to tag evidence in the field"
-            android:textColor="@android:color/background_light"
+            android:textColor="@color/buttonText"
             android:textSize="32sp"
             android:typeface="serif"
-            app:layout_constraintBottom_toTopOf="@+id/nav_guidelines2"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nav_guidelines1" />
+            app:layout_constraintTop_toBottomOf="@+id/nav_guidelines1"
+            app:layout_constraintVertical_bias="0.702" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -84,7 +85,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@android:color/holo_blue_dark" />
+            app:srcCompat="@color/bannerColor" />
 
         <TextView
             android:id="@+id/text_guidelines"
@@ -93,7 +94,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:text="@string/guidelines"
-            android:textColor="@android:color/background_light"
+            android:textColor="@color/bannerText"
             android:textSize="48sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"

@@ -8,6 +8,17 @@
     <color name="black_overlay">#66000000</color>
     <color name="light_blue">#00eeff</color>
     <color name="orange">@android:color/holo_orange_light</color>
-    <color name="red">#ff0000</color>
+    <color name="red">#fd2626</color>
+    <color name="black">#000000</color>
+
+    <color name="appBackground">#eeeeee</color>
+
+    <color name="buttonText">#eeeeee</color>
+    <color name="buttonBackground">#0072fd</color>
+    <color name="buttonOutline">#000000</color>
+
+    <color name="bannerColor">#e6b800</color>
+    <color name="bannerText">#5a3315</color>
+    <color name="textColor">@color/darkBlue</color>
 
 </resources>

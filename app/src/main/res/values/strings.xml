@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Evidence Tracker</string>
+    <string name="app_name">VIGILATTE</string>
 
     <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_homepage">HomepageActivity</string>
@@ -14,6 +14,7 @@
     <string name="editCase">EDIT A CASE</string>
     <string name="addCase">ADD A CASE</string>
 
+    <string name="guidelines2">CRIME SCENE PROCEDURES</string>
     <string name="category">CATEGORY:</string>
     <string name="date_incident">DATE OF INCIDENT:</string>
     <string name="name_of_io">NAME OF IO:</string>

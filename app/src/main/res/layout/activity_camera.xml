@@ -5,7 +5,7 @@
     android:id="@+id/splashLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_light"
+    android:background="@color/appBackground"
     android:fitsSystemWindows="true"
     android:theme="@style/AppTheme"
     tools:context=".HomepageActivity">
@@ -14,8 +14,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <Button
+            android:id="@+id/recapture_image"
+            android:layout_width="311dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="412dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:fontFamily="sans-serif"
+            android:text="Recapture Image"
+            android:textColor="@color/buttonText"
+            android:textSize="32sp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/display_pic"
             android:layout_width="412dp"
             android:layout_height="80dp"
             android:layout_marginEnd="8dp"
@@ -26,16 +43,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@android:color/holo_blue_dark" />
+            app:srcCompat="@color/bannerColor" />
 
         <TextView
-            android:id="@+id/text_edit_cases"
+            android:id="@+id/text_camera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:text="@string/editCase"
-            android:textColor="@android:color/background_light"
+            android:text="IMAGE DETAILS"
+            android:textColor="@color/bannerText"
             android:textSize="48sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"
@@ -44,23 +61,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
-        <Button
-            android:id="@+id/nav_go_back"
-            android:layout_width="297dp"
-            android:layout_height="54dp"
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:background="@drawable/button_bg_rounded_corners"
-            android:fontFamily="sans-serif"
-            android:text="GO BACK"
-            android:textColor="@android:color/background_light"
-            android:textSize="32sp"
-            android:typeface="serif"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/recapture_image"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_edit_cases" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="1.0"
+            tools:srcCompat="@tools:sample/avatars" />
     </android.support.constraint.ConstraintLayout>
 </FrameLayout>

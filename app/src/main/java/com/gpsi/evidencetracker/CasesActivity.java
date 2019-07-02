@@ -13,11 +13,11 @@ public class CasesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         setContentView(R.layout.activity_cases);
 
         Button browse_cases = (Button) findViewById(R.id.nav_browse_cases);
         Button add_cases = (Button) findViewById(R.id.nav_add_case);
-        Button edit_cases = (Button) findViewById(R.id.nav_edit_cases);
 
         browse_cases.setOnClickListener(new View.OnClickListener() {
 
@@ -35,12 +35,5 @@ public class CasesActivity extends AppCompatActivity {
             }
         });
 
-        edit_cases.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(CasesActivity.this, EditCasesActivity.class));
-            }
-        });
     }
 }

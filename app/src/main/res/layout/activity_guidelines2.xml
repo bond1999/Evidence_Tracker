@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme"
+    tools:context=".HomepageActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="412dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@color/bannerColor" />
+
+        <TextView
+            android:id="@+id/text_guidelines_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guidelines2"
+            android:textColor="@color/bannerText"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:scrollbars="vertical"
+            android:autoSizeTextType="uniform"
+            android:text="1.	Secure the Crime Scene
+\na)	First priority is medical assistance to individuals and arresting the perpetrator.
+\nb)	Ropes or barricades and guards will prevent unauthorized access to the area.
+c)	The lead investigator evaluates the scene and determines the boundaries.  They do an initial walkthrough and develop a strategy.
+d)	All items must be documented and photographed.
+
+2.	Recording the Crime Scene
+Methods of crime-scene recording: photography, videography, sketches, and note-making.
+
+a)	Photography and Videography
+i.	The crime scene should be unaltered, unless injured people are involved, objects must not be moved until they have been photographed from all necessary angles.
+ii.	If things are removed, added, or positions changed the photographs may not be admissible evidence.
+iii.	Photograph the area where crime took place and the adjacent areas at various angles and ranges.
+iv.	If crime scene includes a body:
+1.	Take photos to show body’s location and position relative to the whole crime scene
+2.	Take close-up photos of injuries and weapons lying near the body
+3.	After the body is removed, photograph the surface underneath.
+4.	When size is significant, use a ruler or other measuring scale
+5.	Digital cameras allow for enhancement and examination in fine detail.
+
+b)	Sketching
+i.	Once photos are taken, sketch the scene.
+ii.	A Rough Sketch is a sketch, drawn at the crime scene, that contains an accurate depiction of the dimensions of the scene and shows the location of all objects having a bearing on the case.
+iii.	All measurements are made with a tape measure
+iv.	Show all items of physical evidence
+v.	Assign each item a number or letter and list it in the legend
+vi.	Show a compass heading designating north
+vii.	A Finished sketch is a precise rendering of the crime scene, usually drawn to scale.
+viii.	Computer-aided drafting (CAD) has become the standard.
+
+c)	Note-Making
+i.	Note-making must be a constant activity throughout the processing of the crime scene.
+ii.	The notes may be the only source of information to refresh memory.
+iii.	Tape-recording notes at a scene can be advantageous – detailed notes can be taped much faster than they can be written. 
+
+3.	Searching the Crime Scene
+a)	One person should supervise and coordinate.
+b)	Include all probable entry and exit points in search
+c)	What to search for will be determined by the particular circumstances of the crime.
+
+
+4.	Collecting Physical Evidence
+a)	Physical evidence can be anything from massive objects to microscopic traces.
+b)	It may be necessary to take custody of all clothing worn by the participants in a crime.
+c)	Handle carefully and wrap separately to avoid loss of trace evidence.
+d)	Critical areas of the crime scene should be vacuumed and the sweepings submitted to the lab for analysis.
+e)	Mobile crime-scene vehicles carry supplies to protect the crime scene; photo, collect, and package evidence; and develop latent fingerprints.
+f)	The integrity of evidence is best maintained when the item is kept in its original condition as found at the crime scene.
+g)	The entire object should be sent to the lab.
+h)	If evidence is found adhering to a large structure, remove specimen with forceps or other appropriate tool.
+i)	In the case of a bloodstain, one may either scrape the stain off the surface, transfer the stain to a moistened swab, or cut out the area of the object containing the stain.
+j)	Each different item or similar items collected at different locations must be placed in separate containers.  
+k)	Packaging evidence separately prevents damage through contact and prevents cross-contamination.
+
+5.	Tools for Evidence Collection
+a)	Forceps
+b)	Plastic pill bottles 
+c)	Manila envelopes, glass vials, pill boxes
+d)	Paper bags and plastic bags
+e)	Fire evidence must be kept in an airtight container to prevent evaporation of petroleum residues
+f)	Clothing must be air-dried and placed in individual paper bags.
+
+6.	Standard/Reference Samples
+a)	The examination of evidence often requires comparison with a known standard/reference sample.
+b)	A standard/reference sample is physical evidence whose origin is known, such as blood or hair from a suspect, that can be compared to crime scene evidence.
+c)	Such materials may be obtained from the victim, a suspect, or other known sources.
+d)	The presence of standard/reference samples greatly facilitates the work of the forensic scientist.
+e)	Bloodstained evidence must be accompanied by a whole-blood or buccal swab s/r sample obtained from all relevant crime-scene participants.
+f)	A buccal swab is a swab of the inner cheek, performed to collect cells for use in determining the DNA profile of an individual.
+g)	Some types of evidence must also be accompanied by the collection of substrate controls.
+h)	Normally collected at arson scenes.
+i)	A substrate control is uncontaminated surface material close to an area where physical evidence has been deposited; used to ensure that the surface on which a sample has been deposited does not interfere with laboratory tests.
+
+7.	Submitting Evidence to the Lab
+a)	Evidence is submitted to the lab either by personal delivery or by mail shipment.
+b)	Most labs require that an evidence submission form accompany all evidence submitted.
+c)	Enables the lab analyst to make an intelligent and complete examination of the evidence.
+d)	Provide a brief description of the case history so the examiner can analyze in a logical sequence.
+e)	The particular kind of examination requested for each type of evidence should be delineated.
+f)	A list of all items submitted must be included.
+
+
+"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
